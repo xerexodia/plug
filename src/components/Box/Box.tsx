@@ -1,29 +1,20 @@
 import React from "react";
-
+import "./styles.css";
 const Box = ({
   children,
-  style,
+  bgColor = "rgba(23, 16, 17,1)",
 }: {
   children: React.ReactNode;
-  style?: React.CSSProperties;
+  bgColor?: string;
 }) => {
   return (
-    <div
-      style={{
-        flex: 1,
-        padding: 1,
-        borderRadius: 20,
-        backgroundImage:
-          "linear-gradient(0deg, rgba(204,73,153,1) 0%, rgba(247,139,52,1) 100%)",
-        ...style,
-      }}
-    >
+    <div className="box">
       <div
         style={{
           display: "flex",
           height: "100%",
           width: "100%",
-          backgroundColor: "#171011",
+          backgroundColor: bgColor,
           borderRadius: 20,
           gap: 20,
           overflow: "hidden",
