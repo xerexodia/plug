@@ -1,3 +1,4 @@
+import Animate from "@/components/Animate/Animate";
 import Header from "@/components/Header/Header";
 import FirstSection from "@/components/LandingPage/FirstSection/FirstSection";
 import Footer from "@/components/LandingPage/Footer/Footer";
@@ -10,6 +11,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex flex-col gap-20 mt-10">
+      {/* <Animate /> */}
       <FirstSection />
       <SecondSection />
       <ThirdSection />

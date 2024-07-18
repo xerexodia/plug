@@ -133,7 +133,7 @@ const StageSection = () => {
         <span className="text-white text-3xl text-center font-bold">
           A Decentralized Deployer Wallets Marketplace.
         </span>
-        <span className="text-white text-xl text-center font-light px-32">
+        <span className="text-white text-center w-full lg:w-1/2 font-light text-sm sm:text-base lg:text-xl">
           Join Any Of Our Three Tiers Today To Start Earning PLUG. Pool
           Contributors Receive 80% Of The Market-Purchased PLUG, While The
           Remaining 20% Are Permanently Burned.

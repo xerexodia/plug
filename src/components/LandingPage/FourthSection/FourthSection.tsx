@@ -13,117 +13,71 @@ const FourthSection = () => {
   return (
     <div className="relative">
       <Image
-        style={{
-          position: "absolute",
-          left: 0,
-          height: 600,
-          opacity: 0.5,
-          top: 200,
-        }}
         src={wave}
         alt=""
+        className="absolute left-0 top-20 lg:top-48 opacity-50 h-96 lg:h-[600px]"
       />
-      <div className="flex flex-col gap-2 px-44">
+      <div className="flex flex-col gap-6 px-4 lg:px-44">
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{
-            opacity: 1,
-          }}
-          viewport={{
-            margin: "-200px",
-          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-200px" }}
           transition={{ ease: "easeInOut" }}
-          className="flex  gap-2"
+          className="flex flex-col lg:flex-row gap-6"
         >
           <Box>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                flexDirection: "column",
-                gap: 20,
-                padding: 20,
-              }}
-            >
-              <h3 className="text-5xl text-white font-bold">Decentralized</h3>
-              <span className="text-xl text-white font-light">
+            <div className="flex flex-col items-start gap-5 p-5 lg:p-8">
+              <h3 className="text-2xl sm:text-4xl lg:text-5xl text-white font-bold">
+                Decentralized
+              </h3>
+              <span className="text-base sm:text-lg lg:text-xl text-white font-light">
                 Utilizing a secure smart contract to handle the transfer and
-                sale of deployers.
+                sale of deployers.
               </span>
               <div>
-                <Image src={img} alt="" />
+                <Image src={img} alt="" className="w-full" />
               </div>
             </div>
           </Box>
           <Box>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                flexDirection: "column",
-                gap: 20,
-                padding: 20,
-              }}
-            >
-              <h3 className="text-5xl text-white font-bold">Trustless</h3>
-              <span className="text-xl text-white font-light">
-                Security measures will mitigate the risk of malisious actors.
+            <div className="flex flex-col items-start gap-5 p-5 lg:p-8">
+              <h3 className="text-2xl sm:text-4xl lg:text-5xl text-white font-bold">
+                Trustless
+              </h3>
+              <span className="text-base sm:text-lg lg:text-xl text-white font-light">
+                Security measures will mitigate the risk of malicious actors.
               </span>
               <div>
-                <Image src={img} alt="" />
+                <Image src={img} alt="" className="w-full" />
               </div>
             </div>
           </Box>
         </motion.div>
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          whileInView={{
-            opacity: 1,
-          }}
-          viewport={{
-            margin: "-200px",
-          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-200px" }}
           transition={{ ease: "easeInOut" }}
         >
           <Box>
             <div
-              style={{
-                height: 300,
-                backgroundImage: "url(" + bg + ")",
-                position: "relative",
-              }}
-            >
-              <Image src={bg} alt="" style={{ height: "100%" }} />
-              <div
-                style={{
-                  position: "absolute",
-                  zIndex: 100,
-                  height: "100%",
-                  top: 0,
-                  left: 0,
-                  padding: 20,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                }}
-              >
-                <h3 className="text-5xl text-white font-bold">
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${bg.src})` }}
+            />
+            <div className="relative z-10 h-72 p-5 lg:p-8 bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl">
+              <div className="flex flex-col h-full justify-between">
+                <h3 className="text-2xl sm:text-4xl lg:text-5xl text-white font-bold">
                   Chain Supported
                 </h3>
-                <div className="flex flex-row items-center">
+                <div className="flex items-center gap-4">
                   <Image
                     src={diamond}
                     alt=""
-                    style={{
-                      opacity: 0.3,
-                      filter: "grayscale(100%)",
-                    }}
+                    className="opacity-30 filter grayscale w-8 sm:w-12 lg:w-16"
                   />
-                  <span className="text-white text-5xl">Ethereum</span>
+                  <span className="text-xl sm:text-2xl lg:text-5xl text-white">
+                    Ethereum
+                  </span>
                 </div>
               </div>
             </div>

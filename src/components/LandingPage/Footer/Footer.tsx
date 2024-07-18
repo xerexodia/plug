@@ -7,58 +7,56 @@ import footer from "../../../../public/footer.png";
 import { MdArrowOutward } from "react-icons/md";
 const Footer = () => {
   return (
-    <div className="relative flex p-20 gap-12">
+    <div className="relative flex flex-col lg:flex-row p-10 lg:p-20 gap-10 lg:gap-12">
       <Image
         src={footer}
         alt=""
-        style={{
-          position: "absolute",
-          zIndex: -100,
-          bottom: 0,
-          left: 0,
-          opacity: 0.4,
-        }}
+        style={{ zIndex: -100 }}
+        className="absolute left-0 bottom-0  opacity-40 h-64 lg:h-auto"
       />
-      <div className="flex w-3/5 h-64 ">
+      <div className="flex flex-1 flex-col lg:flex-row lg:w-3/5">
         <Box bgColor="rgba(23, 16, 17,0.2)">
           <div className="flex flex-col flex-1 p-6 justify-between">
-            <div className="flex items-start justify-between">
-              <Image className="w-32" src={logo} alt="" />
-              <span className="text-white text-center font-light text-center w-1/2">
-                A Decentralized Deployer WAllets Marketplace.
+            <div className="flex items-center justify-between mb-4 lg:mb-6">
+              <Image className="w-24 lg:w-32 z-0" src={logo} alt="Logo" />
+              <span className="text-white text-center font-light lg:text-left lg:w-1/2">
+                A Decentralized Deployer Wallets Marketplace.
               </span>
-              <div />
             </div>
-            <div className="flex items-end justify-between">
-              <span className="text-white font-black uppercase text-3xl">
-                home
+            <div className="flex items-center justify-between">
+              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+                Home
               </span>
-              <span className="text-white font-black uppercase text-3xl">
-                DOCS
+              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+                Docs
               </span>
-              <span className="text-white font-black uppercase text-3xl">
-                MARKETPLACE
+              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+                Marketplace
               </span>
             </div>
           </div>
         </Box>
       </div>
-      <div className="flex w-2/5 justify-between">
+      <div className="flex flex-1 flex-col lg:flex-row lg:w-2/5 justify-between">
         <Box bgColor="rgba(23, 16, 17,0.3)">
           <div className="flex flex-col flex-1 p-6 justify-between">
-            <div className="flex items-start justify-between">
-              <span className="text-white font-semiBold text-3xl">
-                CONTACT US
+            <div className="flex items-center justify-between mb-4 lg:mb-6">
+              <span className="text-white font-semibold text-lg lg:text-3xl">
+                Contact Us
               </span>
-              <div className="flex w-8 h-8 bg-white items-center justify-center rounded-full ">
+              <div className="flex w-8 h-8 bg-white items-center justify-center rounded-full">
                 <MdArrowOutward color="black" size={25} />
               </div>
             </div>
-            <div>
-              <span className="text-white font-semiBold text-2xl">
+            <div className="flex flex-col items-start">
+              <span className="text-white font-semibold text-lg lg:text-2xl">
                 TEAM@PLUG.SITE
               </span>
-              <Image src={doubleIcon} alt="" style={{ marginTop: 4 }} />
+              <Image
+                src={doubleIcon}
+                alt="Double Icon"
+                style={{ marginTop: 4 }}
+              />
             </div>
           </div>
         </Box>
