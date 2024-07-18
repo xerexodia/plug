@@ -27,13 +27,9 @@ const Animate = () => {
   }, [lottie]);
 
   useEffect(() => {
-    if (!showAnimation) {
-      setTimeout(() => {
-        setShowAnimation(false);
-      }, 5700);
-    } else {
+    setTimeout(() => {
       setShowAnimation(false);
-    }
+    }, 5700);
   }, []);
 
   if (!showAnimation) return null;
