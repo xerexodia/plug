@@ -26,6 +26,7 @@ export default function Home() {
   }, [showAnimation]);
 
   if (showAnimation) return <Animate />;
+
   return (
     <main className="flex flex-col gap-20 mt-10">
       <Header />
