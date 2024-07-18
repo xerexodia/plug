@@ -1,14 +1,30 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import svg from "../../../public/femalPlug.svg";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-//@ts-ignore
 import Lottie from "react-lottie";
-import animation from "../../../public/animation.json";
-import { motion } from "framer-motion";
-import { Player } from "@lottiefiles/react-lottie-player";
+import * as animation from "../../../public/animation.json";
+import { useRouter } from "next/navigation";
 
 const Animate = () => {
+  const [showAnimation, setShowAnimation] = useState(true);
+  const router = useRouter();
+
+  useEffect(() => {
+    const hasShownAnimation = sessionStorage.getItem("hasShownAnimation");
+
+    if (hasShownAnimation) {
+      setShowAnimation(false);
+      router.replace("/Home");
+    } else {
+      setTimeout(() => {
+        sessionStorage.setItem("hasShownAnimation", "true");
+        router.replace("/Home");
+      }, 5700); // Adjusted to 5700ms to account for the duration
+    }
+  }, [router]);
+
+  if (!showAnimation) return null;
+
   const defaultOptions = {
     autoplay: true,
     animationData: animation,
@@ -18,8 +34,8 @@ const Animate = () => {
   };
 
   return (
-    <div className="bg-white absolute z-10000">
-      <Lottie options={defaultOptions} height={"100%"} width={"100%"} />;
+    <div className="bg-white absolute inset-0 z-50">
+      <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
     </div>
   );
 };
