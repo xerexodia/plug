@@ -36,7 +36,7 @@ const Animation = () => {
       setTimeout(() => {
         sessionStorage.setItem("hasShownAnimation", "true");
         router.replace("/Home");
-      }, 5700);
+      }, 5600);
     }
   }, [router]);
 
