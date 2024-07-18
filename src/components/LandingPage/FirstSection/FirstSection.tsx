@@ -30,7 +30,7 @@ const FirstSection = () => {
             text="Buy"
             style={{ width: "40%" }}
           />
-          <span className="py-3 px-4 lg:px-10 text-white border rounded-full">
+          <span className="py-2 px-4 w-3/4 overflow-hidden  lg:px-10 text-white border rounded-full">
             xfghsdghsdghcvbsdfhdfgdfgjdfgjdfjgdfghjdfgjd
           </span>
         </div>
