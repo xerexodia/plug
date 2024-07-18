@@ -1,13 +1,30 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Lottie from "react-lottie";
-import * as animation from "../../../public/animation.json";
+import { useEffect, useRef, useState } from "react";
+import type { LottiePlayer } from "lottie-web";
 import { useRouter } from "next/navigation";
 
-const Animate = () => {
-  const [showAnimation, setShowAnimation] = useState(true);
+const Animation = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [lottie, setLottie] = useState<LottiePlayer | null>(null);
   const router = useRouter();
+  const [showAnimation, setShowAnimation] = useState(true);
+  useEffect(() => {
+    import("lottie-web").then((Lottie) => setLottie(Lottie.default));
+  }, []);
+
+  useEffect(() => {
+    if (lottie && ref.current) {
+      const animation = lottie.loadAnimation({
+        container: ref.current,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "/animation.json",
+      });
+
+      return () => animation.destroy();
+    }
+  }, [lottie]);
 
   useEffect(() => {
     const hasShownAnimation = sessionStorage.getItem("hasShownAnimation");
@@ -19,25 +36,11 @@ const Animate = () => {
       setTimeout(() => {
         sessionStorage.setItem("hasShownAnimation", "true");
         router.replace("/Home");
-      }, 5700); // Adjusted to 5700ms to account for the duration
+      }, 5300);
     }
   }, [router]);
 
-  if (!showAnimation) return null;
-
-  const defaultOptions = {
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  return (
-    <div className="bg-white absolute inset-0 z-50">
-      <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
-    </div>
-  );
+  return <div className="w-full h-full bg-white" ref={ref} />;
 };
 
-export default Animate;
+export default Animation;
