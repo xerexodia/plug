@@ -1,13 +1,13 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
 import type { LottiePlayer } from "lottie-web";
-import { useRouter } from "next/navigation";
 
-const Animation = () => {
+const Animate = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [lottie, setLottie] = useState<LottiePlayer | null>(null);
-  const router = useRouter();
   const [showAnimation, setShowAnimation] = useState(true);
+
   useEffect(() => {
     import("lottie-web").then((Lottie) => setLottie(Lottie.default));
   }, []);
@@ -27,20 +27,32 @@ const Animation = () => {
   }, [lottie]);
 
   useEffect(() => {
-    const hasShownAnimation = sessionStorage.getItem("hasShownAnimation");
-
-    if (hasShownAnimation) {
-      setShowAnimation(false);
-      router.replace("/Home");
-    } else {
+    if (!showAnimation) {
       setTimeout(() => {
-        sessionStorage.setItem("hasShownAnimation", "true");
-        router.replace("/Home");
-      }, 5600);
+        setShowAnimation(false);
+      }, 5700);
+    } else {
+      setShowAnimation(false);
     }
-  }, [router]);
+  }, []);
 
-  return <div className="w-full h-full bg-white" ref={ref} />;
+  if (!showAnimation) return null;
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        zIndex: 120,
+        backgroundColor: "transparent",
+      }}
+    >
+      <div ref={ref} />
+    </div>
+  );
 };
 
-export default Animation;
+export default Animate;
