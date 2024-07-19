@@ -51,7 +51,7 @@ const Card = ({
         translateX: 0,
       }}
       viewport={{
-        margin: "-200px",
+        margin: "-100px",
       }}
       transition={{ ease: "easeInOut", duration: 0.5 * index }}
       style={{ padding: 1 }}
