@@ -12,7 +12,7 @@ const Footer = () => {
       <Image
         src={footer}
         alt=""
-        style={{ zIndex: -100 }}
+        style={{ zIndex: -100, width: "100%" }}
         className="absolute left-0 bottom-0  opacity-40 h-64 lg:h-auto"
       />
       <div className="flex flex-1 flex-col lg:flex-row lg:w-3/5">

@@ -51,6 +51,7 @@ const Card = ({
         translateX: 0,
       }}
       viewport={{
+        once: true,
         margin: "-100px",
       }}
       transition={{ ease: "easeInOut", duration: 0.5 * index }}
