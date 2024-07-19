@@ -28,7 +28,7 @@ const SecondSection = () => {
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ margin: "-200px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ ease: "easeInOut" }}
           className="text-white uppercase text-center w-full lg:w-1/2 font-light text-sm sm:text-base lg:text-xl"
         >
@@ -39,7 +39,7 @@ const SecondSection = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ margin: "-200px" }}
+        viewport={{ margin: "-100px" }}
         transition={{ ease: "easeInOut" }}
         className="flex flex-col lg:flex-row gap-6 px-2 lg:px-24"
       >

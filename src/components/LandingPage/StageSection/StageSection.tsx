@@ -120,7 +120,7 @@ const StageSection = () => {
     handleResize(); // Initial check
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [isMobile]);
 
   const handleCardClick = (index: number) => {
     setSelectedCard(index);
