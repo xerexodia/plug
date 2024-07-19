@@ -56,7 +56,7 @@ const FourthSection = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ margin: "-200px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ ease: "easeInOut" }}
         >
           <Box>

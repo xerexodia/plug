@@ -18,6 +18,8 @@ const malePaths = [
 ];
 
 const SplashScreen = (props: SVGProps<SVGSVGElement>) => {
+  const [show, setShow] = React.useState(true);
+  if (!show) return null;
   return (
     <motion.div
       initial={{ background: "black" }}
@@ -26,6 +28,7 @@ const SplashScreen = (props: SVGProps<SVGSVGElement>) => {
         duration: 1,
         delay: 4,
       }}
+      onAnimationComplete={() => setShow(false)}
       style={{
         position: "fixed",
         top: 0,
