@@ -3,7 +3,7 @@ import Button from "@/components/Buttons/Button";
 import React from "react";
 import img from "../../../../public/btn.svg";
 import bg from "../../../../public/bg.png";
-import diamond from "../../../../public/diamond.svg";
+import diamond from "../../../../public/diamond.png";
 import wave from "../../../../public/wave.png";
 import Image from "next/image";
 import Box from "@/components/Box/Box";
@@ -70,7 +70,7 @@ const FourthSection = () => {
                   Chain Supported
                 </h3>
                 <div className="flex items-center gap-4">
-                  <Image src={diamond} alt="" />
+                  <Image src={diamond} alt="" className="w-10" />
                   <span className="text-xl sm:text-2xl lg:text-5xl text-white ">
                     Ethereum
                   </span>
