@@ -21,7 +21,7 @@ const FourthSection = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-200px" }}
+          viewport={{ margin: "-200px" }}
           transition={{ ease: "easeInOut" }}
           className="flex flex-col lg:flex-row gap-6"
         >
@@ -56,7 +56,7 @@ const FourthSection = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-200px" }}
+          viewport={{ margin: "-200px" }}
           transition={{ ease: "easeInOut" }}
         >
           <Box>
