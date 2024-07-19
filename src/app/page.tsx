@@ -6,11 +6,13 @@ import FourthSection from "@/components/LandingPage/FourthSection/FourthSection"
 import SecondSection from "@/components/LandingPage/SecondSection/SecondSection";
 import StageSection from "@/components/LandingPage/StageSection/StageSection";
 import ThirdSection from "@/components/LandingPage/ThirdSection/ThirdSection";
+import SplashScreen from "@/components/SplashScreen/SplashScreen";
 import React from "react";
 
 const Home = () => {
   return (
     <main className="flex flex-col gap-20">
+      <SplashScreen />
       {/* <Animate /> */}
       <Header />
       <FirstSection />

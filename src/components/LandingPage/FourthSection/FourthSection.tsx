@@ -70,12 +70,8 @@ const FourthSection = () => {
                   Chain Supported
                 </h3>
                 <div className="flex items-center gap-4">
-                  <Image
-                    src={diamond}
-                    alt=""
-                    className="opacity-30 filter grayscale w-8 sm:w-12 lg:w-16"
-                  />
-                  <span className="text-xl sm:text-2xl lg:text-5xl text-white">
+                  <Image src={diamond} alt="" />
+                  <span className="text-xl sm:text-2xl lg:text-5xl text-white ">
                     Ethereum
                   </span>
                 </div>

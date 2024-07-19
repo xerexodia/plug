@@ -2,7 +2,8 @@ import Box from "@/components/Box/Box";
 import Image from "next/image";
 import React from "react";
 import logo from "../../../../public/logo.png";
-import doubleIcon from "../../../../public/doubleIcon.png";
+//@ts-ignore
+import doubleIcon from "../../../../public/doubleIcon.svg?url";
 import footer from "../../../../public/footer.png";
 import { MdArrowOutward } from "react-icons/md";
 const Footer = () => {

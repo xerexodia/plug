@@ -20,6 +20,10 @@ const Animate = () => {
         loop: true,
         autoplay: true,
         path: "/animation.json",
+        rendererSettings: {
+          preserveAspectRatio: "xMidyMid slice",
+          progressiveLoad: false,
+        },
       });
 
       return () => animation.destroy();
@@ -30,7 +34,7 @@ const Animate = () => {
     setTimeout(() => {
       setShowAnimation(false);
     }, 5700);
-  }, []);
+  }, [showAnimation]);
 
   if (!showAnimation) return null;
 
@@ -44,6 +48,9 @@ const Animate = () => {
         height: "100vh",
         zIndex: 120,
         backgroundColor: "transparent",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <div ref={ref} />

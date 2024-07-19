@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import doubleIcon from "../../../../public/doubleIcon.png";
+//@ts-ignore
+import doubleIcon from "../../../../public/doubleIcon.svg?url";
 import hero from "../../../../public/hero.png";
 import Button from "@/components/Buttons/Button";
 
@@ -30,8 +31,8 @@ const FirstSection = () => {
             text="Buy"
             style={{ width: "40%" }}
           />
-          <span className="py-2 px-4 w-3/4 overflow-hidden  lg:px-10 text-white border rounded-full">
-            xfghsdghsdghcvbsdfhdfgdfgjdfgjdfjgdfghjdfgjd
+          <span className="py-2 px-4  lg:px-10 text-white border rounded-full">
+            xfghsdghsdghcvbsdfhdfgdfgjdfgjdfjgd
           </span>
         </div>
       </div>

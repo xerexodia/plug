@@ -18,8 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Animate />
+      <body id="sec" className={inter.className}>
         {children}
       </body>
     </html>
