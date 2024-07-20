@@ -1,10 +1,10 @@
 import Box from "@/components/Box/Box";
 import Image from "next/image";
 import React from "react";
-import logo from "../../../../public/logo.png";
+import logo from "../../../public/logo.png";
 //@ts-ignore
-import doubleIcon from "../../../../public/doubleIcon.svg?url";
-import footer from "../../../../public/footer.png";
+import doubleIcon from "../../../public/doubleIcon.svg?url";
+import footer from "../../../public/footer.png";
 import { MdArrowOutward } from "react-icons/md";
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
       <Image
         src={footer}
         alt=""
-        style={{ zIndex: -100, width: "100%" }}
+        style={{ zIndex: -100, width: "100%", opacity: 0.1 }}
         className="absolute left-0 bottom-0  opacity-40 h-64 lg:h-auto"
       />
       <div className="flex flex-1 flex-col lg:flex-row lg:w-3/5">

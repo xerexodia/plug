@@ -15,7 +15,7 @@ const ThirdSection = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{ ease: "easeInOut" }}
         className="flex flex-col items-center gap-2"
       >

@@ -20,6 +20,7 @@ const Button: FC<ButtonProps> = ({
       onClick={onClick}
       style={{
         background: bgColor,
+        cursor: "pointer",
         color: color,
         ...style,
       }}

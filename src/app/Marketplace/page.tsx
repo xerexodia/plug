@@ -1,24 +1,15 @@
 "use client";
-import Header from "@/components/Header/Header";
-import FirstSection from "@/components/LandingPage/FirstSection/FirstSection";
-import Footer from "@/components/LandingPage/Footer/Footer";
-import FourthSection from "@/components/LandingPage/FourthSection/FourthSection";
-import SecondSection from "@/components/LandingPage/SecondSection/SecondSection";
-import StageSection from "@/components/LandingPage/StageSection/StageSection";
-import ThirdSection from "@/components/LandingPage/ThirdSection/ThirdSection";
+
+import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import logo from "../../../public/logo.png";
-import DiamondEth from "../../../public/diamodEth.svg";
 import DoubleIcon from "../../../public/doubleIcon.svg";
-import Button from "@/components/Buttons/Button";
-import { IoChevronBackOutline } from "react-icons/io5";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { BsFillPlayFill } from "react-icons/bs";
 import Ellipse from "../../../public/Ellipse.png";
 import Box from "@/components/Box/Box";
 import { motion } from "framer-motion";
+import Header from "@/components/Header/Header";
 
 const MarketPlace = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,31 +17,7 @@ const MarketPlace = () => {
   return (
     <main className="flex flex-col gap-20">
       {/* ================header============== */}
-      <div className="flex items-center justify-between py-6 px-4 lg:px-20">
-        <Image src={logo} alt="" className="w-24" />
-        <div className="lg:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <FaBars className="text-white text-2xl" />
-          </button>
-        </div>
-        <div
-          className={`flex-col lg:flex-row lg:flex ${
-            isOpen ? "flex" : "hidden"
-          } items-center gap-4 absolute lg:static top-16 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0`}
-        >
-          <Button text={"VIEW LISTINGS"} />
-          <Button text={"BUY DEVELOPPER"} />
-          <Button text={"MY LISTINGS"} />
-          <div className="flex flex-row gap-0.25 items-center rounded-full bg-lightBlack">
-            <IoChevronBackOutline color="grey" size={22} />
-            <DiamondEth />
-          </div>
-          <Button
-            text={"CONNECT"}
-            bgColor="linear-gradient(0deg, rgba(204,73,153,1) 0%, rgba(247,139,52,1) 100%)"
-          />
-        </div>
-      </div>
+      <Header />
       {/* =======================first section=================== */}
       <div className="relative flex flex-col items-center justify-end gap-6 p-4 md:p-8 lg:p-12">
         <Image

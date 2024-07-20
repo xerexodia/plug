@@ -1,13 +1,13 @@
 import Animate from "@/components/Animate/Animate";
-import Header from "@/components/Header/Header";
 import FirstSection from "@/components/LandingPage/FirstSection/FirstSection";
-import Footer from "@/components/LandingPage/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import FourthSection from "@/components/LandingPage/FourthSection/FourthSection";
 import SecondSection from "@/components/LandingPage/SecondSection/SecondSection";
 import StageSection from "@/components/LandingPage/StageSection/StageSection";
 import ThirdSection from "@/components/LandingPage/ThirdSection/ThirdSection";
 import SplashScreen from "@/components/SplashScreen/SplashScreen";
 import React from "react";
+import Header from "@/components/LandingPage/Header/Header";
 
 const Home = () => {
   return (
