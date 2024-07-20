@@ -4,9 +4,11 @@ import Button from "../Buttons/Button";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { push } = useRouter();
 
   return (
     <div className="flex items-center justify-between py-6 px-4 lg:px-20">
@@ -24,6 +26,9 @@ const Header = () => {
         <Button text={"Home"} />
         <Button text={"Docs"} />
         <Button
+          onClick={() => {
+            push("/Marketplace");
+          }}
           text={"MARKETPLACE"}
           bgColor="linear-gradient(0deg, rgba(204,73,153,1) 0%, rgba(247,139,52,1) 100%)"
         />

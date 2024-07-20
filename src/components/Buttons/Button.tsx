@@ -5,6 +5,7 @@ interface ButtonProps {
   color?: string;
   bgColor?: string;
   style?: React.CSSProperties;
+  onClick?: () => void;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -12,9 +13,11 @@ const Button: FC<ButtonProps> = ({
   color = "white",
   bgColor = "black",
   style,
+  onClick,
 }) => {
   return (
     <button
+      onClick={onClick}
       style={{
         background: bgColor,
         color: color,
