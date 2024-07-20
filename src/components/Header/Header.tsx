@@ -29,7 +29,7 @@ const Header = () => {
       <div
         className={`flex-col lg:flex-row lg:flex ${
           isOpen ? "flex" : "hidden"
-        } items-center gap-4 absolute lg:static top-16 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0`}
+        } items-center gap-4 absolute lg:static top-16 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0 z-10`}
       >
         <Button text={"VIEW LISTINGS"} />
         <Button text={"BUY DEVELOPPER"} />
