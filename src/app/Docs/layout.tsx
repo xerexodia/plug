@@ -13,8 +13,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <div className="relative flex flex-col md:flex-row md:overflow-hidden bg-white">
-      <div className="fixed flex-1 w-full t-0 bg-white border-b border-grey h-20 z-10 ">
+    <div className="relative flex h-screen flex-col md:flex-row md:overflow-hidden bg-white">
+      <div className="fixed flex-1 w-full t-0 bg-white border-b border-grey h-20 z-10 items-center">
         <button
           onClick={toggleSidebar}
           className="md:hidden absolute top-4 left-4 bg-gray-800 text-3xl text-black p-2 rounded"
@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="w-full flex-none md:w-64 pt-20">
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto relative mt-20">
+      <div className="flex-grow p-6 overflow-y-auto relative mt-20">
         {children}
       </div>
     </div>
