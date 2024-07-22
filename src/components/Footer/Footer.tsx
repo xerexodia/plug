@@ -1,3 +1,4 @@
+"use client";
 import Box from "@/components/Box/Box";
 import Image from "next/image";
 import React from "react";
@@ -6,7 +7,9 @@ import logo from "../../../public/logo.png";
 import doubleIcon from "../../../public/doubleIcon.svg?url";
 import footer from "../../../public/footer.png";
 import { MdArrowOutward } from "react-icons/md";
+import { useRouter } from "next/navigation";
 const Footer = () => {
+  const { push } = useRouter();
   return (
     <div className="relative flex flex-col lg:flex-row p-10 lg:p-20 gap-10 lg:gap-12">
       <Image
@@ -25,13 +28,34 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+              <span
+                style={{
+                  cursor: "pointer",
+                  zIndex: 100000,
+                }}
+                onClick={() => push("/")}
+                className="text-white font-black uppercase text-lg lg:text-3xl"
+              >
                 Home
               </span>
-              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+              <span
+                style={{
+                  cursor: "pointer",
+                  zIndex: 100000,
+                }}
+                onClick={() => push("/Layout")}
+                className="text-white font-black uppercase text-lg lg:text-3xl"
+              >
                 Docs
               </span>
-              <span className="text-white font-black uppercase text-lg lg:text-3xl">
+              <span
+                style={{
+                  cursor: "pointer",
+                  zIndex: 100000,
+                }}
+                onClick={() => push("/Marketplace")}
+                className="text-white font-black uppercase text-lg lg:text-3xl"
+              >
                 Marketplace
               </span>
             </div>
