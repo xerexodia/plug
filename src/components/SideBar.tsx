@@ -26,17 +26,17 @@ const Sidebar = ({
       </div>
       <nav className="flex flex-col space-y-1 p-4">
         <Link
-          href="/docs/"
+          href="/Docs/"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs" ? "bg-grey text-black font-bold" : "text-black"
+            pathname === "/Docs" ? "bg-grey text-black font-bold" : "text-black"
           }`}
         >
           OverView
         </Link>
         <Link
-          href="/docs/BuyDeployer"
+          href="/Docs/BuyDeployer"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/BuyDeployer"
+            pathname === "/Docs/BuyDeployer"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -44,9 +44,9 @@ const Sidebar = ({
           Buying Deployer Wallet
         </Link>
         <Link
-          href="/docs/SellDeployer"
+          href="/Docs/SellDeployer"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/SellDeployer"
+            pathname === "/Docs/SellDeployer"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -54,9 +54,9 @@ const Sidebar = ({
           Selling Deployer Wallet
         </Link>
         <Link
-          href="/docs/Trade"
+          href="/Docs/Trade"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Trade"
+            pathname === "/Docs/Trade"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -64,9 +64,9 @@ const Sidebar = ({
           Trade Deployer Wallet
         </Link>
         <Link
-          href="/docs/Security"
+          href="/Docs/Security"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Security"
+            pathname === "/Docs/Security"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -74,9 +74,9 @@ const Sidebar = ({
           Ethics & Security protocols
         </Link>
         <Link
-          href="/docs/Token"
+          href="/Docs/Token"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Token"
+            pathname === "/Docs/Token"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -84,9 +84,9 @@ const Sidebar = ({
           Plug TokenEconomics
         </Link>
         <Link
-          href="/docs/Dao"
+          href="/Docs/Dao"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Dao"
+            pathname === "/Docs/Dao"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -94,9 +94,9 @@ const Sidebar = ({
           Plug Dao
         </Link>
         <Link
-          href="/docs/RoadMap"
+          href="/Docs/RoadMap"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/RoadMap"
+            pathname === "/Docs/RoadMap"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -104,9 +104,9 @@ const Sidebar = ({
           Plug Roadmap
         </Link>
         <Link
-          href="/docs/Strategy"
+          href="/Docs/Strategy"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Strategy"
+            pathname === "/Docs/Strategy"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -114,9 +114,9 @@ const Sidebar = ({
           Drops Brand Placement Strategy
         </Link>
         <Link
-          href="/docs/HowToBuy"
+          href="/Docs/HowToBuy"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/HowToBuy"
+            pathname === "/Docs/HowToBuy"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -124,9 +124,9 @@ const Sidebar = ({
           How to Buy A Deployer Wallet
         </Link>
         <Link
-          href="/docs/HowToCreate"
+          href="/Docs/HowToCreate"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/HowToCreate"
+            pathname === "/Docs/HowToCreate"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -134,9 +134,9 @@ const Sidebar = ({
           How To Create A Plug
         </Link>
         <Link
-          href="/docs/DyorGuide"
+          href="/Docs/DyorGuide"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/DyorGuide"
+            pathname === "/Docs/DyorGuide"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
@@ -144,9 +144,9 @@ const Sidebar = ({
           Marketplace DYOR Guide
         </Link>
         <Link
-          href="/docs/Disclaimer"
+          href="/Docs/Disclaimer"
           className={`py-2 px-4 rounded text-sm ${
-            pathname === "/docs/Disclaimer"
+            pathname === "/Docs/Disclaimer"
               ? "bg-grey text-black font-bold"
               : "text-black"
           }`}
