@@ -30,7 +30,12 @@ const Header = () => {
         } items-center gap-4 absolute lg:static top-16 left-0 right-0 bg-black lg:bg-transparent p-4 lg:p-0`}
       >
         <Button text={"Home"} />
-        <Button text={"Docs"} />
+        <Button
+          onClick={() => {
+            push("/docs");
+          }}
+          text={"Docs"}
+        />
         <Button
           onClick={() => {
             push("/Marketplace");

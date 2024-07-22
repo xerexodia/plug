@@ -43,7 +43,7 @@ const Footer = () => {
                   cursor: "pointer",
                   zIndex: 100000,
                 }}
-                onClick={() => push("/Layout")}
+                onClick={() => push("/docs")}
                 className="text-white font-black uppercase text-lg lg:text-3xl"
               >
                 Docs
