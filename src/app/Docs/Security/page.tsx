@@ -2,7 +2,7 @@ import React from "react";
 
 const Security = () => {
   return (
-    <div className="flex flex-col gap-6 w-3/5">
+    <div className="flex flex-col gap-6 w-full lg:w-3/5">
       <h1 className="text-3xl font-bold">🔒Marketplace Security Measures</h1>
       <p>
         The plug marketplace is committed to maintaining ethical and secure

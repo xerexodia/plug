@@ -26,7 +26,7 @@ const feeDetails = [
 
 const page = () => {
   return (
-    <div className="flex flex-col gap-6 w-3/5">
+    <div className="flex flex-col gap-6 w-full lg:w-3/5">
       <h1 className="text-3xl font-bold">Plug Token Economics</h1>
       <div className="flex flex-col gap-4 ">
         <span className="italic">Contract: 0x000000000000000000000000000 </span>

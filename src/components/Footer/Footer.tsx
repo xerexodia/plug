@@ -31,7 +31,7 @@ const Footer = () => {
               <span
                 style={{
                   cursor: "pointer",
-                  zIndex: 100000,
+                  zIndex: 10,
                 }}
                 onClick={() => push("/")}
                 className="text-white font-black uppercase text-lg lg:text-3xl"
@@ -41,7 +41,7 @@ const Footer = () => {
               <span
                 style={{
                   cursor: "pointer",
-                  zIndex: 100000,
+                  zIndex: 10,
                 }}
                 onClick={() => push("/Docs")}
                 className="text-white font-black uppercase text-lg lg:text-3xl"
@@ -51,7 +51,7 @@ const Footer = () => {
               <span
                 style={{
                   cursor: "pointer",
-                  zIndex: 100000,
+                  zIndex: 10,
                 }}
                 onClick={() => push("/Marketplace")}
                 className="text-white font-black uppercase text-lg lg:text-3xl"

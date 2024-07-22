@@ -15,17 +15,18 @@ const Sidebar = ({
 
   return (
     <div
-      className={`fixed inset-0 z-50 transform ${
+      className={`fixed inset-0 z-50 transform bg-white ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:h-full md:z-auto bg-gray-800 text-white`}
     >
       <div className="flex justify-between items-center p-4 md:hidden">
-        <button onClick={toggleSidebar} className="text-white">
+        <button onClick={toggleSidebar} className="text-black">
           ✕
         </button>
       </div>
       <nav className="flex flex-col space-y-1 p-4">
         <Link
+          onClick={toggleSidebar}
           href="/Docs/"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs" ? "bg-grey text-black font-bold" : "text-black"
@@ -34,6 +35,7 @@ const Sidebar = ({
           OverView
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/BuyDeployer"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/BuyDeployer"
@@ -44,6 +46,7 @@ const Sidebar = ({
           Buying Deployer Wallet
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/SellDeployer"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/SellDeployer"
@@ -54,6 +57,7 @@ const Sidebar = ({
           Selling Deployer Wallet
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Trade"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Trade"
@@ -64,6 +68,7 @@ const Sidebar = ({
           Trade Deployer Wallet
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Security"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Security"
@@ -74,6 +79,7 @@ const Sidebar = ({
           Ethics & Security protocols
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Token"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Token"
@@ -84,6 +90,7 @@ const Sidebar = ({
           Plug TokenEconomics
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Dao"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Dao"
@@ -94,6 +101,7 @@ const Sidebar = ({
           Plug Dao
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/RoadMap"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/RoadMap"
@@ -104,6 +112,7 @@ const Sidebar = ({
           Plug Roadmap
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Strategy"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Strategy"
@@ -114,6 +123,7 @@ const Sidebar = ({
           Drops Brand Placement Strategy
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/HowToBuy"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/HowToBuy"
@@ -124,6 +134,7 @@ const Sidebar = ({
           How to Buy A Deployer Wallet
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/HowToCreate"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/HowToCreate"
@@ -134,6 +145,7 @@ const Sidebar = ({
           How To Create A Plug
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/DyorGuide"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/DyorGuide"
@@ -144,6 +156,7 @@ const Sidebar = ({
           Marketplace DYOR Guide
         </Link>
         <Link
+          onClick={toggleSidebar}
           href="/Docs/Disclaimer"
           className={`py-2 px-4 rounded text-sm ${
             pathname === "/Docs/Disclaimer"

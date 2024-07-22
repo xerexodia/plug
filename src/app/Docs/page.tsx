@@ -5,9 +5,9 @@ import plugDOCS from "../../../public/plugDOCS.png";
 import Image from "next/image";
 import Link from "next/link";
 
-const OverView = () => {
+const Docs = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 w-full lg:w-3/5">
       <div className="flex flex-col gap-6">
         <h1 className="text-3xl font-bold">📍An Overview of Plug</h1>
         <span className="text-xl text-lightBlack">
@@ -61,4 +61,4 @@ const OverView = () => {
   );
 };
 
-export default OverView;
+export default Docs;

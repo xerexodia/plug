@@ -2,11 +2,7 @@ import React from "react";
 
 const Dao = () => {
   return (
-    // <div className="flex flex-col gap-6 w-3/5">
-    //   <h1 className="text-3xl font-bold">Plug Dao</h1>
-    //   <h3 className="text-3xl font-bold">Plug Dao</h3>
-    // </div>
-    <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl">
+    <div className="bg-white p-8 rounded-lg shadow-md w-full lg:w-3/5">
       <h1 className="text-3xl font-bold mb-4">Plug DAO</h1>
       <p className="mb-6">
         <strong>

@@ -44,7 +44,7 @@ const Strategy = () => {
     },
   ];
   return (
-    <div className="w-3/5">
+    <div className="w-full lg:w-3/5">
       <h2 className="text-2xl font-bold mb-4">
         PLUG Deployer Wallet Brand Placement Strategy
       </h2>

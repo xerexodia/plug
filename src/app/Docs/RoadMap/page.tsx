@@ -102,7 +102,7 @@ const phases = [
 ];
 const RoadMap = () => {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 w-3/5">
+    <main className="flex flex-col items-center justify-center bg-gray-50 w-full lg:w-3/5">
       <div className="bg-white rounded-lg w-full">
         <h1 className="text-3xl font-bold mb-8">Plug Marketplace Roadmap</h1>
         {phases.map((phase, index) => (

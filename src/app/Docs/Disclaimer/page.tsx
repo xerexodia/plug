@@ -2,7 +2,7 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <div className="flex flex-col gap-6 w-3/5">
+    <div className="flex flex-col gap-6 w-full lg:w-3/5">
       <h1 className="text-3xl font-bold mb-4">
         Legal Disclaimer for PLUG Deployer Wallets
       </h1>
