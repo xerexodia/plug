@@ -1,6 +1,6 @@
 // components/Layout.tsx
 
-import Sidebar from "./SideBar";
+import Sidebar from "../../components/SideBar";
 import plugDOCS from "../../../public/plugDOCS.png";
 import Image from "next/image";
 import Link from "next/link";

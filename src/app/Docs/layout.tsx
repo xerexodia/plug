@@ -1,7 +1,7 @@
 // components/Layout.tsx
 "use client";
 import { useState } from "react";
-import Sidebar from "./SideBar";
+import Sidebar from "../../components/SideBar";
 import logo from "../../../public/logo.png";
 import Image from "next/image";
 
