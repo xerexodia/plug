@@ -32,7 +32,7 @@ const Header = () => {
         <Button text={"Home"} />
         <Button
           onClick={() => {
-            push("/docs");
+            push("/Docs");
           }}
           text={"Docs"}
         />
