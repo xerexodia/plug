@@ -65,7 +65,7 @@ const Sidebar = ({
               : "text-black"
           }`}
         >
-          Trade Deployer Wallet
+          Trading Deployer Wallet
         </Link>
         <Link
           onClick={toggleSidebar}

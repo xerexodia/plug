@@ -35,25 +35,26 @@ const Docs = () => {
           <div className="flex flex-col underline text-blue gap-2">
             <li>
               <Link href="/docs/" className="font-bold">
-                Buying Locked Liquidity
+                Buying Deployer Wallet
               </Link>
             </li>
             <li>
               <Link href="/docs/" className="font-bold">
-                Selling Locked Liquidity
+                Selling Deployer Wallet
               </Link>
             </li>
             <li>
               <Link href="/docs/" className="font-bold">
-                Trading Locked Liquidity
+                Trading Deployer Wallet
               </Link>
             </li>
           </div>
           <p>
-            Sales and purchases of locked liquidity within the marketplace are
-            executed primarily using the PLUG Token. This stimulates the token’s
-            inner economy, simultaneously encouraging its purchase and providing
-            it with an intrinsic marketplace value.
+            Sales and purchases of Deployer wallet contracts within the
+            marketplace are executed primarily using the PLUG token. This
+            stimulates the token&apos;s inner economy, simultaneously
+            encouraging its purchase and providing it with an intrinsic
+            marketplace value.
           </p>
         </div>
       </div>
